@@ -10,11 +10,14 @@ import java.util.Arrays;
  * @author https://github.com/xiaoliu66
  * @since 2022/4/12 20:58
  * @version 1.0
- *
+ * 二分查找算法-非递归形式
  */
+
 
 /******************************************************************************
  *  Compilation:  javac BinarySearch.java
+ *  如果代码注释中有中文，编译时要指定字符集 javac -encoding utf-8 ChapterOne\ItemOne\BinarySearch.java
+ *
  *  Execution:    java BinarySearch allowlist.txt < input.txt
  *  Dependencies: In.java StdIn.java StdOut.java
  *  Data files:   https://algs4.cs.princeton.edu/11model/tinyAllowlist.txt
@@ -40,7 +43,7 @@ import java.util.Arrays;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(args));
+        // System.out.println(Arrays.toString(args));
         In in = new In(args[0]);
         int[] whitelist = in.readAllInts();
 

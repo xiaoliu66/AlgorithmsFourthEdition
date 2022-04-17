@@ -7,6 +7,8 @@ import java.util.Arrays;
  * @since 2022/4/11 22:48
  * @version 1.0
  * @Description p15 二分查找的递归实现
+ * 如果代码注释中有中文，编译时要指定字符集 javac -encoding utf-8 ChapterOne\ItemOne\BinarySearch.java
+ *
  */
 public class BinarySearchRecursive {
     public static void main(String[] args) {
