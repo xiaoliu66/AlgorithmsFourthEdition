@@ -8,6 +8,11 @@ import edu.princeton.cs.algs4.StdOut;
  * @since 2022/4/20 22:21
  * @version 1.0
  * p82 一种表示定容字符串栈的抽象数据类型
+ *
+ * 编译运行：首先进入src 目录下
+ * javac -encoding utf-8 ChapterOne\ItemThree\FixedCapacityStackOfStrings.java
+ * java ChapterOne.ItemThree.FixedCapacityStackOfStrings < data\tobe.txt
+ * to be not that or be (2 left on stack)
  */
 public class FixedCapacityStackOfStrings {
     private String[] a;
