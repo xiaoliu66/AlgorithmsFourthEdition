@@ -1,4 +1,4 @@
-package ChapterOne.ItemOne;
+package chapterone.firstitem;
 
 import java.util.Arrays;
 

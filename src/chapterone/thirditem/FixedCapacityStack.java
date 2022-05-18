@@ -1,9 +1,7 @@
-package ChapterOne.ItemThree;
+package chapterone.thirditem;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
-
-import java.util.ArrayList;
 
 /**
  * @author https://github.com/xiaoliu66
