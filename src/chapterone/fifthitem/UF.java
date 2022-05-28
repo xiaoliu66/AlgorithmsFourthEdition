@@ -8,6 +8,10 @@ import edu.princeton.cs.algs4.StdOut;
  * @since 2022/5/25 22:25
  * @version 1.0
  * p138 算法1.5 union-find 的实现
+ *
+ * javac -encoding utf-8 chapterone/fifthitem/UF.java
+ *
+ * java chapterone.fifthitem.UF < data/tinyUF.txt
  */
 public class UF {
     private int[] id; // 分量id(以触点作为索引)
@@ -57,19 +61,30 @@ public class UF {
      * 在p和q之间添加一条连接
      */
     public void union(int p, int q) {
+        // 将p和q归并到相同的分量中
+        int pID = find(p);
+        int qID = find(q);
 
+        // 如果p和q已经在相同的分量之中则不需要采取任何行动
+        if (pID == qID) return;
+
+        // 将p的分量重命名为q的名称
+        for (int i = 0; i < id.length; i++) {
+            if (id[i] == pID) id[i] = qID;
+        }
+        count--;
     }
 
     public static void main(String[] args) {
         int N = StdIn.readInt();
-        UF uF = new UF(N);
+        UF uf = new UF(N);
         while (!StdIn.isEmpty()) {
             int p = StdIn.readInt();
             int q = StdIn.readInt();
-            if (uF.connected(p,q)) continue;
-            uF.union(p,q);
+            if (uf.connected(p,q)) continue;
+            uf.union(p,q);
             StdOut.println(p + " " + q);
         }
-        StdOut.println(uF.count() + "components");
+        StdOut.println(uf.count() + " components");
     }
 }
