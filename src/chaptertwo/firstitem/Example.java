@@ -5,14 +5,14 @@ import edu.princeton.cs.algs4.StdOut;
 
 /**
  * @author https://github.com/xiaoliu66
- * @since 2022/5/29 09:36
  * @version 1.0
  * p153 排序算法的模板
- *
+ * <p>
  * 编译时不用管控制台的警告
  * javac -encoding utf8  -Xlint:unchecked chaptertwo/firstitem/Example.java
- *
+ * <p>
  * java chaptertwo.firstitem.Example < data/tiny.txt
+ * @since 2022/5/29 09:36
  */
 public class Example {
 
@@ -29,7 +29,8 @@ public class Example {
     }
 
     /**
-     * 对元素进行比较
+     * 对元素v,w进行比较,如果v < w 返回true 否则返回false
+     *
      * @param v
      * @param w
      * @return
@@ -39,7 +40,8 @@ public class Example {
     }
 
     /**
-     * 对元素进行交换位置
+     * 对元素i,j进行交换位置
+     *
      * @param a
      * @param i
      * @param j
@@ -59,6 +61,7 @@ public class Example {
 
     /**
      * 测试数组元素是否有序
+     *
      * @param a
      * @return
      */
