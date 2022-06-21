@@ -2,6 +2,9 @@ package chaptertwo.firstitem;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
+
+import java.time.LocalDateTime;
 
 /**
  * @author https://github.com/xiaoliu66
@@ -65,7 +68,10 @@ public class Insertion {
 
     public static void main(String[] args) {
         String[] strings = StdIn.readAllStrings();
+        System.out.println("startTime: " + LocalDateTime.now());
+        Stopwatch timer = new Stopwatch();
         sort(strings);
-        show(strings);
+        StdOut.println("elapsed time = " + timer.elapsedTime() + "S");
+        // show(strings);
     }
 }
