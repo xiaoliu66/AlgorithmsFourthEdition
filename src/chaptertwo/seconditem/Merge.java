@@ -1,5 +1,12 @@
 package chaptertwo.seconditem;
 
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Stopwatch;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+
 /**
  * @author https://github.com/xiaoliu66
  * @version 1.0
@@ -67,5 +74,13 @@ public class Merge {
         return v.compareTo(w) < 0;
     }
 
+    public static void main(String[] args) {
+        String[] strings = {"M","E","R","G","E","S","O","R","T","E","X","A","M","P","L","E"};
+        System.out.println("startTime: " + LocalDateTime.now());
+        Stopwatch timer = new Stopwatch();
+        sort(strings);
+        StdOut.println("elapsed time = " + timer.elapsedTime() + "S");
+        System.out.println(Arrays.toString(strings));
+    }
 
 }
